@@ -4,7 +4,7 @@ Perception stack of an Autonomous Driving system often contains multiple neural 
 
 
 
-This repository contains implementation of a multi task learning based neural network. The attempt is to implement an architecture that has an encoder decoder structure. It takes RGB image as an input and predicts a segmentation mask and a depth map in a single forward pass. The idea is to have a common backbone for extracting feature map. Then according to the required task decoder structure are plugged on to this encoder to generate predictions. This sort of networks are essential for Autonomous Driving.
+This repository contains implementation of a multi task learning based neural network presented in [1]. The attempt is to implement an architecture that has an encoder decoder structure. It takes RGB image as an input and predicts a segmentation mask and a depth map in a single forward pass. The idea is to have a common backbone for extracting feature map. Then according to the required task decoder structure are plugged on to this encoder to generate predictions. This sort of networks are essential for Autonomous Driving.
 
 
 
@@ -43,3 +43,9 @@ Another way these results can be interpreted is in the form of a point cloud of 
 **3D Segmentation point cloud**:
 
 ![](ezgif-3-860fdced22.gif)
+
+
+**References**
+[1] Real-Time Joint Semantic Segmentation and Depth Estimation Using Asymmetric Annotations
+Vladimir Nekrasov, Thanuja Dharmasiri, Andrew Spek, Tom Drummond, Chunhua Shen, Ian Reid
+In ICRA 2019 (https://arxiv.org/pdf/1809.04766.pdf)
