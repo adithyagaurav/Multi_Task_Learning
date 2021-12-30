@@ -17,9 +17,7 @@ Model architecture can be understood by perceiving it as an encoder decoder stru
 **For Decoder** : A lightweight RefineNet architecture was used which contains CRP blocks. The decoder consistently upsamples feature maps from encoder. Before the penultimate layer level, decoder splits into two heads for segmentation mask of input image and depth of image.
 
 
-
-![img](https://d3i71xaburhd42.cloudfront.net/435d4b5c30f10753d277848a17baddebd98d3c31/2-Figure1-1.png) 
-
+![2-Figure1-1](https://user-images.githubusercontent.com/41729963/147723077-695511f3-9857-491f-b782-459359712268.png)
 
 
 ### Dataset:
