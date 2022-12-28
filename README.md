@@ -6,6 +6,8 @@ Perception stack of an Autonomous Driving system often contains multiple neural 
 
 This repository contains implementation of a multi task learning based neural network presented in [1]. The attempt is to implement an architecture that has an encoder decoder structure. It takes RGB image as an input and predicts a segmentation mask and a depth map in a single forward pass. The idea is to have a common backbone for extracting feature map. Then according to the required task decoder structure are plugged on to this encoder to generate predictions. This sort of networks are essential for Autonomous Driving.
 
+![Alt Text](ezgif-6-6358723c09.gif)
+
 
 
 ### Architecture
