@@ -6,7 +6,7 @@ Perception stack of an Autonomous Driving system often contains multiple neural 
 
 This repository contains implementation of a multi task learning based neural network presented in [1]. The attempt is to implement an architecture that has an encoder decoder structure. It takes RGB image as an input and predicts a segmentation mask and a depth map in a single forward pass. The idea is to have a common backbone for extracting feature map. Then according to the required task decoder structure are plugged on to this encoder to generate predictions. This sort of networks are essential for Autonomous Driving.
 
-![](https://github.com/adithyagaurav/Multi_Task_Learning/blob/master/ezgif-6-6358723c09.gif)
+![GIF](https://github.com/adithyagaurav/Multi_Task_Learning/blob/master/ezgif-6-6358723c09.gif)
 
 
 
@@ -31,8 +31,6 @@ Model has been tested with KITTI and NYU-D dataset. Both datasets provide set of
 ### Results:
 
 The model was tested on KITTI scenes for highway and residential drives. As an output model predicts a segmentation map and a depth map in a single forward pass. The segmentation mask and the depth map can be fused using libraries like Open3D to create a Point Cloud representation of 3D objects in each scene. We can not only get classification and pixel coordinates of each object in the image but we can also go a step ahead and compute their depth from the vehicle in real world.
-
-![](ezgif-6-6358723c09.gif)
 
 Another way these results can be interpreted is in the form of a point cloud of depth segmentation map. Open3D has functionality to reproduce a full fledged Point Cloud using RGB and Depth image pair.
 
